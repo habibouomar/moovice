@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/moovice/static/css/main.1a8a0596.css",
+    "main.js": "/moovice/static/js/main.aa3dd028.js",
+    "index.html": "/moovice/index.html",
+    "main.1a8a0596.css.map": "/moovice/static/css/main.1a8a0596.css.map",
+    "main.aa3dd028.js.map": "/moovice/static/js/main.aa3dd028.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a8a0596.css",
+    "static/js/main.aa3dd028.js"
+  ]
+}
