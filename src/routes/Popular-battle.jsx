@@ -15,7 +15,7 @@ export class PopularBattle extends React.Component {
     componentDidMount = () => {
         axios('https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=5890ce75a89afa87173ecf06602230ab').then((reponse) => {
             const moviesList = reponse.data.results
-            
+
             this.setState({
                 movies: moviesList
             })
@@ -67,29 +67,26 @@ export class PopularBattle extends React.Component {
 
     render() {
         return (
-            <>
-                <h1>Poppular Battle</h1>
 
-                <div>
-                    {
-                        /**
-                     * Slice: permet de prendre une tranche du tableaux.
-                     * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
-                     * */
+            <div className='row mt-5'>
+                {
+                    /**
+                 * Slice: permet de prendre une tranche du tableaux.
+                 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+                 * */
 
-                        this.state.movies.slice(this.state.currentBattle, this.state.currentBattle + 2).map(
-                            movie => <Card
-                                title={movie.title}
-                                resume={movie.overview}
-                                date={movie.release_date}
-                                id={movie.id}
-                                picture={'https://image.tmdb.org/t/p/w300/' + movie.poster_path}
-                                onFavorite={this.onFavoriteHandler} />
-                        )
-                    }
-                </div>
+                    this.state.movies.slice(this.state.currentBattle, this.state.currentBattle + 2).map(
+                        movie => <Card
+                            title={movie.title}
+                            resume={movie.overview}
+                            date={movie.release_date}
+                            id={movie.id}
+                            picture={'https://image.tmdb.org/t/p/w300/' + movie.poster_path}
+                            onFavorite={this.onFavoriteHandler} />
+                    )
+                }
+            </div>
 
-            </>
         );
     }
 }

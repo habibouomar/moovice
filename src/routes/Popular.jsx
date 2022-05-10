@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { Card } from '../components/Card';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export class Popular extends React.Component {
     constructor(props) {
@@ -24,17 +25,17 @@ export class Popular extends React.Component {
 
     render() {
         return (
-            
-            <div class="container d-flex">
 
-            
-                 {this.state.movies.map(movie => { return <Card title={movie.title} resume={movie.overview} date={movie.release_date} picture={'https://image.tmdb.org/t/p/w300/' + movie.poster_path} /> })}
-
-               
+            <div className='row mt-5'>
+                {this.state.movies.map(movie => {
+                    return <Card
+                        title={movie.title}
+                        resume={movie.overview}
+                        date={movie.release_date}
+                        picture={'https://image.tmdb.org/t/p/w300/' + movie.poster_path} />
+                })}
             </div>
 
-
-
-        );
+        )
     }
 }
