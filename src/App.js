@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Router } from './router/Router';
-
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
