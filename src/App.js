@@ -19,13 +19,13 @@ export default class App extends React.Component {
                                     <NavLink className="nav-link" to="/popular">Popular</NavLink>
                                     <NavLink className="nav-link" to="/popularBattle">Popular Battle</NavLink>
                                     <NavLink className="nav-link" to="/devChoice">Dev's Choice</NavLink>
-                                    <NavLink className="nav-link" to="/favorite">Favorite</NavLink>
+                                    <NavLink className="nav-link" to="/favorites">Favorites</NavLink>
                                 </nav>
                             </div>
                         </header>
                             <Router />
                         <footer className="mt-auto text-white-50">
-                            <p>The World Is Mine : <a href="https://habibouomar.github.io" target="_blank" rel="noreferrer" className="text-white">Portfolio</a> - Accés Github <a href="https://urlz.fr/iba3" target="_blank" rel="noreferrer" className="text-white">@habibouomar</a>.</p>
+                            <p className="text-center pt-5">The World Is Mine : <a href="https://habibouomar.github.io" target="_blank" rel="noreferrer" className="text-white">Portfolio</a> - Accés Github <a href="https://urlz.fr/iba3" target="_blank" rel="noreferrer" className="text-white">@habibouomar</a>.</p>
                         </footer>
                     </div>
                 </body>

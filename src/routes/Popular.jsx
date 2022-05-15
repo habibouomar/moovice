@@ -13,7 +13,7 @@ export class Popular extends React.Component {
     }
 
     componentDidMount = () => {
-        axios('https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=5890ce75a89afa87173ecf06602230ab').then((reponse) => {
+        axios('https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=5890ce75a89afa87173ecf06602230ab&language=fr-FR').then((reponse) => {
             const moviesList = reponse.data.results
             console.log(moviesList);
 

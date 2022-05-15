@@ -8,6 +8,10 @@ import { Favorites } from '../routes/Favorites';
 import { DevChoice } from '../routes/Dev-choice';
 
 export class Router extends React.Component {
+    
+    constructor(props) {
+        super(props);
+    }
    
     render() {
         return (
@@ -18,7 +22,6 @@ export class Router extends React.Component {
                 <Route path="/PopularBattle" element={<PopularBattle/>}/>
                 <Route path="/devChoice" element={<DevChoice/>}/>
                 <Route path="/Favorites" element={<Favorites/>}/>
-                <Route path="/" element={<Favorites/>}/>
             </Routes>
         </>
         )
